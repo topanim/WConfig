@@ -38,7 +38,7 @@ load_dotev()
 > Now let's create a config class
 
 ```python
-class Config:
+class WConfig:
     
     @VAR("API_KEY")
     def api_key(self): pass
@@ -47,7 +47,7 @@ class Config:
 > You can easily get variables from your `.env` file
 
 ```python
-config = Config()
+config = WConfig()
 config.api_key()
 
 >>> YOUR_API_KEY
@@ -60,7 +60,7 @@ config.api_key()
 > NOTE: Supported types are `str, bool, int, float` 
 
 ```python
-class Config:
+class WConfig:
     
     @VAR("LOGGING", bool)
     def logging(self) -> bool: pass
@@ -71,7 +71,7 @@ class Config:
 > You can handle the received value if you need by setting the `handle` flag to `True`.
 
 ```python
-class Config:
+class WConfig:
     
     @VAR("API_KEY", handle=True)
     def api_key(self, var): 
@@ -92,7 +92,7 @@ class Api:
     def url(self): pass
 
 
-class Config:
+class WConfig:
     api = Api()
     
     @VAR("LOGGING", bool)
@@ -100,7 +100,7 @@ class Config:
 ```
 
 ```python
-config = Config()
+config = WConfig()
 
 config.api.key()
 config.logging()
