@@ -29,7 +29,7 @@ LOGGING=False
 ```
 
 ## Usage
-> Not forget add this lines to your `main.py` file
+> Don't forget add this lines to your `main.py` file
  ```python
 from dotenv import load_dotenv
 
