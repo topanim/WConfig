@@ -29,7 +29,12 @@ LOGGING=False
 ```
 
 ## Usage
+> Not forget add this lines to your `main.py` file
+ ```python
+from dotenv import load_dotenv
 
+load_dotev()
+```
 > Now let's create a config class
 
 ```python
