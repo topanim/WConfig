@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 :copyright: (c) 2024 WHAOX
 """
 
-version = '1.0.1'
+version = '1.0.3'
 
 with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
@@ -30,7 +30,7 @@ setup(
     license='MIT LICENSE, see LICENSE file',
 
     packages=find_packages(),
-    install_requires=[],
+    install_requires=['python-dotenv'],
 
     keywords=['python', 'env', 'environment', 'config']
 )
